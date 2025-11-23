@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{margin: 0;padding: 0;}
+html,body{overflow-x: hidden;scroll-behavior: smooth;font-family: 'Poppins', sans-serif;}
+/* #356865
+#37966f
+#fd5523
+#fffbe6 
+#232f34
+*/
+body{background-color: #fffbe659;}
+a{color: #232f34;text-decoration: none;transition: all ease-in-out 200ms;}
+.navbar{
+    background-color: #b9e4c9;
+}
+.navbar-brand{
+    color: #232f34 !important; 
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.navbar-brand span{
+    color: #fd5523 !important;
+    font-size: 1.4em;
+}
+.nav-item a{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 1em;
+    color: #232f34;
+    text-transform: uppercase;
+}
+.nav-item a:hover,.nav-item a.active{
+    color: #fd5523 !important;
+    font-weight: 700;
+}
+.mainBtn{
+    text-transform: uppercase;
+    color: #232f34;
+    background-color: #fd5523;
+    color:#fffbe6 !important;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+.mainBtn:hover{
+    box-shadow: 0px 0px 5px 1px #fd5523;
+}
+.mainBtn.odd{
+    background-color: #356865;
+}
+.mainBtn.odd:hover{
+    box-shadow: 0px 0px 5px 1px #356865;
+}
+.mainHeading{
+    font-size: 2em;
+    font-weight: 500;
+}
+.uploadFile{
+    text-align: center;
+    background-color:#3568659d;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 3em 0;
+    width: 100%;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+    border: 1px solid #356865;
+}
+.uploadFile:hover{
+    background-color:#356865;
+}
+.uploadFile .mainHeading{
+    color: #fffbe6;
+    margin-bottom: 1em;
+}
+.uploadFile label span{font-size: 4em;color: #fffbe6;cursor: pointer;}
+.uploadFile input{display: none;}
+input,textarea{
+    padding: 0.6em 2em;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 2px 1px #232f34;
+    margin-bottom: 1em;
+}
+textarea{
+  width: 100%;
+  height: 5em;
+  resize: none;
+}
+.simpleForm input{
+    display: block;
+    width: 100%;
+
+}
+form input:focus,textarea:focus{
+    border-color: #fd5523;
+    box-shadow: none;
+}
+form label{
+    color: #232f34;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.customHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #b9e4c9;
+}
+.customHeader > span{
+        color: #fffbe6;
+        background-color: #b9e4c9;
+        border-radius: 5px;
+        padding: 0.5em 1em;
+        font-size: 0.8em;
+}
+.customHeader p{
+    font-size: 0.8em;
+}
+.customHeader p span{
+    color: #356865;
+}
+.customHeader img{
+    width: 5em;
+}
+.mainText{
+    font-size: 0.9em;
+    color: #232f34;
+    margin-bottom: 1em;
+}
+.date{font-size: 0.8em;font-weight: 500;}
+.title{
+    border-bottom: 1px solid #b9e4c9;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    color: #232f34;
+}
+.smText{
+    color: #232f34;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+table{
+    width: 100%;
+    margin-top: 1em;
+}
+table th{
+    background-color: #b9e4c9;
+    color: #232f34;
+    font-size: 0.8em;
+    font-weight: 800;
+    padding: 0.5em;
+    border: 1px solid #fffbe6;
+}
+table td{
+    padding: 0.3em 0.2em;
+}
+
+table textarea,
+table td input{
+    border-radius: 0;
+    padding: 0.2em;
+    font-size: 0.8em;
+}
+.buttonGroup{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.buttonGroup .mainBtn{
+    display: inline-block;
+        width: 100%;
+        text-align: center;
+}
+.cardForm{
+    background-color: #b9e4c9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px #232f34;
+}
+.cardForm input{width: 20em;}
+.cardForm .inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardForm label{
+    font-size: 0.8em;
+}
+.cardForm table th{
+    font-size: 0.8em;
+}
+table th span:first-child{
+  display: block;
+  border-bottom: 1px solid #fffbe6;
+}
+.cardForm table input{
+    width: 100%;
+}
+.homeTable th{
+  border-color: #356865;
+}
+.homeTable td{
+  border: 1px solid #b9e4c9;
+}
+.homeTable td a:hover{
+  opacity: 0.6;
+}
+.reminderModal{
+  background-color: rgba(0, 0, 0, 0.39);
+}
+.reminderModal .modal-content{
+  background-color: #b9e4c9;
+  padding: 2em;
+}
+.reminderModal h1{font-size: 1.5em; font-weight: 500; text-transform: uppercase;margin-bottom: 1.3em;}
+.reminderForm {
+  background: #b9e4c9;
+  box-shadow: #232f34 0px 0px 4px 2px ;
+  border-radius: 10px;
+  padding: 3em;
+}
+.reminderForm .chkBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reminderForm .chkBox label{
+  font-size: 1em;
+  color: #232f34;
+}
+.reminderForm .chkBox input{
+  box-shadow: none;
+  width: 1.5em;
+  height: 1.5em;
+  accent-color: #fd5523;
+}
+.reminderForm .dateContainer input{
+  width: 100%;
+  display: block;
+}
+.reminderForm input{
+  display: block;
+  width: 100%;
+}
+.Toastify__toast-theme--light {
+  background: #356865 !important;
+  color: #fffbe6 !important;
+}
+.navbar-collapse{text-align: center;padding: 2em 0;}
+@media(max-width:992px){
+    .cardForm{margin-top: 1em; padding: 1em;}
+    .cardForm table th{font-size: 0.5em;}
+    .cardForm .inputContainer{display: block;}
+    .cardForm input{width: 100%;display: block;}
+    .uploadFile .mainHeading{font-size: 1.2em;}
+    .customHeader{flex-direction: column;gap: 1em;}
+}
